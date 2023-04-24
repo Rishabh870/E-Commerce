@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Ecommerce App</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <header>
+    <!-- Top Part -->
+    <div id="top" class="container-fluid mx-auto m-0 bg-dark">
+      <div class="row align-items-center py-2 py-md-3 p-md-2">
+        <!-- Logo -->
+        <div class="col-3">
+          <a href="../Pages/Home.html" class="mx-3 img-fluid d-md-flex">
+            <img
+              class="logo"
+              src="../Images/logo.webp"
+              alt="My Ecommerce Logo"
+            />
+          </a>
+        </div>
+
+        <!-- Search Box -->
+        <div class="col-6">
+          <div class="mx-3 d-none d-md-flex">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search for products..."
+              />
+              <div class="input-group-append">
+                <button class="btnSearch">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Login and Cart Buttons -->
+        <div class="col-3 p-0 px-sm-2">
+          <div
+            class="float-right d-flex flex-row align-items-center justify-content-evenly"
+          >
+            <a href="../Pages/Login.html" class="mr-lg-3 ml-2 d-none d-md-flex">
+              <p class="login m-0">Login</p>
+            </a>
+            <a href="../Pages/Cart.html" class="cartIcon m-1 mx-sm-2">
+              <button class="cartIcon m-1 mx-sm-2">
+                <i class="fa fa-shopping-cart"></i>
+              </button>
+            </a>
+            <button
+              class="navbar-toggler d-flex d-md-none mx-2 mx-sm-2 p-0 p-xsm-1"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavDropdown"
+            >
+              <span
+                class="navbar-toggler-icon text-center fa fa-navicon menuIcon p-1"
+              ></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End -->
+
+    <!-- Bottom Part -->
+    <div id="Bottom" class="opacity-25">
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-md p-md-1 p-1 bg-secondary">
+        <div class="container-fluid">
+          <!-- Mobile navigation toggle button -->
+
+          <!-- Navigation links -->
+          <div
+            class="collapse navbar-collapse d-lg-flex justify-content-center my-3 my-md-0"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav text-center">
+              <!-- Home link -->
+              <li class="d-md-none">
+                <div class="px-2">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search for products..."
+                    />
+                    <div class="input-group-append">
+                      <button class="btnSearch">
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navItem" href="../Pages/Home.html">Home</a>
+              </li>
+              <!-- All Products link -->
+              <li class="nav-item">
+                <a class="nav-link navItem" href="../Pages/Product.html"
+                  >All Products</a
+                >
+              </li>
+              <!-- Women dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link navItem dropdown-toggle"
+                  href="#"
+                  id="womenDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Women</a
+                >
+                <div
+                  class="dropdown-menu menuBg"
+                  aria-labelledby="womenDropdown"
+                >
+                  <a
+                    class="dropdown-item selectItem"
+                    href="../Pages/Women-AllProduct.html"
+                    ><p class="m-0 text-center text-md-left">All Products</p></a
+                  >
+                  <a
+                    class="dropdown-item selectItem"
+                    href="../Pages/Women-Dresses.html"
+                    ><p class="m-0 text-center text-md-left">Dresses</p></a
+                  >
+                  <a
+                    class="dropdown-item selectItem"
+                    href="../Pages/Women-Pants.html"
+                    ><p class="m-0 text-center text-md-left">Pants</p></a
+                  >
+                  <a
+                    class="dropdown-item selectItem"
+                    href="../Pages/Women-Skirts.html"
+                    ><p class="m-0 text-center text-md-left">Skirts</p></a
+                  >
+                </div>
+              </li>
+              <!-- Men dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link navItem dropdown-toggle"
+                  href="#"
+                  id="menDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Men</a
+                >
+                <div
+                  class="dropdown-menu menuBg outlines"
+                  aria-labelledby="menDropdown"
+                >
+                  <a
+                    class="dropdown-item selectItem"
+                    href="../Pages/Men-AllProduct.html"
+                    ><p class="m-0 text-center text-md-left">All Product</p></a
+                  >
+                  <a
+                    class="dropdown-item selectItem"
+                    href="../Pages/Men-Shirts.html"
+                    ><p class="m-0 text-center text-md-left">Shirts</p></a
+                  >
+                  <a
+                    class="dropdown-item selectItem"
+                    href="../Pages/Men-Shoes.html"
+                    ><p class="m-0 text-center text-md-left">Shoes</p></a
+                  >
+                  <a
+                    class="dropdown-item selectItem"
+                    href="../Pages/Men-Hoodies.html"
+                    ><p class="m-0 text-center text-md-left">Hoodies</p></a
+                  >
+                </div>
+              </li>
+              <!-- Kids link -->
+              <li class="nav-item dropdown">
+                <a class="nav-link navItem" href="../Pages/Kids.html">Kids</a>
+              </li>
+              <!-- Contact link -->
+              <li class="nav-item">
+                <a class="nav-link navItem" href="../Pages/Contact.html"
+                  >Contact</a
+                >
+              </li>
+              <!-- Login Link -->
+              <li class="nav-item d-md-none">
+                <a class="nav-link navItem" href="../Pages/Login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navigation Bar -->
+    </div>
+    <!-- End -->
+  </header>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Cart</title>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <!-- The outermost container element for cart. It's a full width container with height set to 100% and text aligned to the center. -->
+    <div class="container cart text-center">
+      <!-- It has a row element that contains the cart items and the summary section -->
+      <div class="row align-items-stretch m-md-5">
+        <!--Its takes up 8 columns and 0 margin on large screens and all columns and margin on smaller screens.  -->
+        <div id="itemCart" class="col-lg-8 col m-lg-0 m-3">
+          <!-- It contains a card element which sets the layout and style and custom css class card-height. -->
+          <div class="card card-height">
+            <!-- The card header displays "Cart". -->
+            <h1 class="card-header">Cart</h1>
+            <!-- The card body has scrolling enabled and contains the cart items. -->
+            <div class="card-body card-body-scroll p-2">
+              <!-- The card-text class styles the inner text of the card body. -->
+              <div class="card-text">
+                <!-- The cart-item class styles each individual item and have border with margin top-bottom in the cart. -->
+                <div class="cart-item border my-2">
+                  <!-- The row element aligns the cart item components horizontally and vertically in the center of the row. -->
+                  <div
+                    class="row align-items-center justify-content-md-center p-2"
+                  >
+                    <!-- This column contains the product image and name and takes up 3 columns on small screens and all columns on larger screens.-->
+                    <div class="col-sm-3 p-2 p-md-0 col" style="height: 100%">
+                      <div
+                        class="d-flex align-items-top justify-content-end pb-4"
+                      >
+                        <i class="fas fa-remove remove-xs"></i>
+                        <!-- Remove button icon -->
+                      </div>
+                      <!-- The image has an alt attribute for accessibility purposes. -->
+                      <img
+                        src="../Images/Women/Dresses/Dress 1.webp"
+                        alt="Dress"
+                        class="object-fit-cover h-100"
+                      />
+                      <p class="mb-2 w-100 checkOutName d-none d-sm-block">
+                        Green Dress
+                      </p>
+                    </div>
+                    <!-- It takes up 3 columns and margin 0 on small screens, some margin to screen size bigger then small.-->
+                    <div class="col-sm-7 p-2 p-sm-0 col">
+                      <!-- This div is for the mobile version of the cart item -->
+                      <div class="row d-flex justify-content-evenly">
+                        <div
+                          class="d-flex col-12 w-100 align-items-top justify-content-end pb-4 d-sm-none"
+                        >
+                          <i class="fas fa-remove remove"></i>
+                          <!-- Remove button icon -->
+                        </div>
+                        <!-- The div below displays the product name.  -->
+                        <p class="mb-2 w-100 col-12 d-sm-none checkOutName">
+                          Green Dress
+                        </p>
+                        <div
+                          class="col-12 col-sm-4 mt-0 checkOutName align-items-center d-flex justify-content-center"
+                        >
+                          Rs.25
+                        </div>
+                        <!-- Price of the item -->
+                        <div
+                          class="quantity-input col-12 col-sm-8 justify-content-center my-2"
+                        >
+                          <!-- This div is for the quantity input section of the item -->
+                          <button class="cartBtn minus">
+                            <i class="fas fa-minus"></i>
+                            <!-- Decrease quantity button icon -->
+                          </button>
+                          <input type="text" class="cartInput" value="2" />
+                          <!-- Quantity of the item -->
+                          <button class="cartBtn plus">
+                            <i class="fas fa-plus"></i>
+                            <!-- Increase quantity button icon -->
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- It takes up 2 columns and display-inline on small screens,display none to screen size bigger then small.-->
+                    <div class="col-sm-2 d-none d-sm-inline">
+                      <!-- This div is for the desktop version of the cart item -->
+                      <button class="btn btn-outline-danger px-sm-3 py-sm-2">
+                        <i class="fas fa-trash"></i>
+                        <!-- Remove button icon -->
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- The cart-item class styles each individual item and have border with margin top-bottom in the cart. -->
+                <div class="cart-item border my-2">
+                  <!-- The row element aligns the cart item components horizontally and vertically in the center of the row. -->
+                  <div class="row align-items-center justify-content-md-center">
+                    <!-- This column contains the product image and name and takes up 3 columns on small screens and all columns on larger screens.-->
+                    <div class="col-sm-3 p-2 p-md-0 col" style="height: 100%">
+                      <div
+                        class="remove-xs d-flex align-items-top justify-content-end pb-4"
+                      >
+                        <i class="fas fa-remove remove-xs"></i>
+                        <!-- Remove button icon -->
+                      </div>
+                      <!-- The image has an alt attribute for accessibility purposes. -->
+                      <img
+                        src="../Images/Men/Hoodie/Hoodie 1.webp"
+                        alt="Hoodie"
+                        class="object-fit-cover h-100"
+                      />
+                      <p class="mb-2 w-100 checkOutName d-none d-sm-block">
+                        Hoodie
+                      </p>
+                    </div>
+                    <!-- It takes up 3 columns and margin 0 on small screens, some margin to screen size bigger then small.-->
+                    <div class="col-sm-7 p-2 p-sm-0 col">
+                      <!-- This div is for the mobile version of the cart item -->
+                      <div class="row d-flex justify-content-evenly p-2">
+                        <div
+                          class="d-flex col-12 w-100 align-items-top justify-content-end pb-4 d-sm-none"
+                        >
+                          <i class="fas fa-remove remove"></i>
+                          <!-- Remove button icon -->
+                        </div>
+                        <!-- The div below displays the product name.  -->
+                        <div class="d-sm-none w-100 col-12">
+                          <p class="mb-2 checkOutName">Casual Hoodie</p>
+                        </div>
+
+                        <div
+                          class="col-12 col-sm-4 mt-0 checkOutName align-items-center d-flex justify-content-center"
+                        >
+                          Rs.25
+                        </div>
+                        <!-- Price of the item -->
+                        <div
+                          class="quantity-input col-12 col-sm-8 justify-content-center my-2"
+                        >
+                          <!-- This div is for the quantity input section of the item -->
+                          <button class="cartBtn minus">
+                            <i class="fas fa-minus"></i>
+                            <!-- Decrease quantity button icon -->
+                          </button>
+                          <input type="text" class="cartInput" value="2" />
+                          <!-- Quantity of the item -->
+                          <button class="cartBtn plus">
+                            <i class="fas fa-plus"></i>
+                            <!-- Increase quantity button icon -->
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- It takes up 2 columns and display-inline on small screens,display none to screen size bigger then small.-->
+                    <div class="col-sm-2 d-none d-sm-inline">
+                      <!-- This div is for the desktop version of the cart item -->
+                      <button class="btn btn-outline-danger px-sm-3 py-sm-2">
+                        <i class="fas fa-trash"></i>
+                        <!-- Remove button icon -->
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- The cart-item class styles each individual item and have border with margin top-bottom in the cart. -->
+                <div class="cart-item border my-2">
+                  <!-- The row element aligns the cart item components horizontally and vertically in the center of the row. -->
+                  <div class="row align-items-center justify-content-md-center">
+                    <!-- This column contains the product image and name and takes up 3 columns on small screens and all columns on larger screens.-->
+                    <div class="col-sm-3 p-2 p-md-0 col" style="height: 100%">
+                      <div
+                        class="remove-xs d-flex align-items-top justify-content-end pb-4"
+                      >
+                        <i class="fas fa-remove remove-xs"></i>
+                        <!-- Remove button icon -->
+                      </div>
+
+                      <!-- The image has an alt attribute for accessibility purposes. -->
+                      <img
+                        src="../Images/Women/Skirts/Skirt 3.webp"
+                        alt="  Grey Skirt"
+                        class="object-fit-cover h-100"
+                      />
+                      <p class="mb-2 w-100 checkOutName d-none d-sm-block">
+                        Grey Skirt
+                      </p>
+                    </div>
+                    <div class="col-sm-7 p-2 p-sm-0 col">
+                      <!-- This div is for the mobile version of the cart item -->
+                      <div class="row d-flex justify-content-evenly p-2">
+                        <div
+                          class="d-flex col-12 w-100 align-items-top justify-content-end pb-4 d-sm-none"
+                        >
+                          <i class="fas fa-remove remove"></i>
+                          <!-- Remove button icon -->
+                        </div>
+                        <!-- The div below displays the product name.  -->
+                        <div class="d-sm-none w-100 col-12">
+                          <p class="mb-2 checkOutName">Grey Skirt</p>
+                        </div>
+
+                        <div
+                          class="col-12 col-sm-4 mt-0 checkOutName align-items-center d-flex justify-content-center"
+                        >
+                          Rs.25
+                        </div>
+                        <!-- Price of the item -->
+                        <div
+                          class="quantity-input col-12 col-sm-8 justify-content-center my-2"
+                        >
+                          <!-- This div is for the quantity input section of the item -->
+                          <button class="cartBtn minus">
+                            <i class="fas fa-minus"></i>
+                            <!-- Decrease quantity button icon -->
+                          </button>
+                          <input type="text" class="cartInput" value="2" />
+                          <!-- Quantity of the item -->
+                          <button class="cartBtn plus">
+                            <i class="fas fa-plus"></i>
+                            <!-- Increase quantity button icon -->
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- It takes up 2 columns and display-inline on small screens,display none to screen size bigger then small.-->
+                    <div class="col-sm-2 d-none d-sm-inline">
+                      <!-- This div is for the desktop version of the cart item -->
+                      <button class="btn btn-outline-danger px-sm-3 py-sm-2">
+                        <i class="fas fa-trash"></i>
+                        <!-- Remove button icon -->
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Its takes up 4 columns and 0 margin on large screens and all columns and margin on smaller screens and flex direction column.  -->
+        <div id="summary" class="d-flex col-lg-4 flex-column m-lg-0 m-3">
+          <!-- A div element with an ID of "summary" that has classes to define its layout on larger screens and smaller screens -->
+          <div class="card">
+            <!-- A div element with a class of "card" that contains the summary information -->
+            <h1 class="card-header">Summary</h1>
+            <!-- A header element with a class of "card-header" that displays "Summary" as the title of the card -->
+            <div class="card-body">
+              <!-- A div element with a class of "card-body" that contains the details of the summary -->
+              <div class="mb-3">
+                Product price: <span class="float-end">$75</span>
+                <!-- A div element that displays the product price and its corresponding value with a class of "float-end" to position it to the right -->
+              </div>
+              <div class="mb-3">
+                Shipping: <span class="float-end">$5</span>
+                <!-- A div element that displays the shipping cost and its corresponding value with a class of "float-end" to position it to the right -->
+              </div>
+              <hr />
+              <!-- A horizontal line to separate the cost details from the total -->
+              <div class="mb-3">Total: <span class="float-end">$80</span></div>
+              <!-- A div element that displays the total cost and its corresponding value with a class of "float-end" to position it to the right -->
+              <button class="submitBtn btn-block">Checkout</button>
+              <!-- A button element with a class of "btn" and "btn-primary" to style it as a blue primary button and a class of "btn-block" to make it a full-width button -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <!-- Connector.js go here -->
+    <script src="../Js/Connector.js"></script>
+
+    <!-- Cart.js go here -->
+    <script src="../Js/Cart.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

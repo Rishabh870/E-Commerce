@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../Style/style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>E-Commerce</title>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <div class="container-fluid mx-auto m-0 p-0">
+      <!-- An element with an id of "topImage" with "img-fluid" class. -->
+      <div id="topImage " class="img-fluid">
+        <!-- To make image as cover  "cover" class is used. -->
+        <div class="cover">
+          <img class="coverImg" src="../Images/Background.jpg" alt="" />
+          <div class="position-absolute coverLogo">
+            <img src="../Images/logo.webp" alt="" class="pb-3 headLogo" />
+            <!-- A paragraph element with a class of "slogan" and a font size of 1rem -->
+            <p class="slogan">Where shopping meets convenience.</p>
+          </div>
+        </div>
+      </div>
+      <!-- An element with an id of "bottomCarousel" with "container-fluid" and "p-0" class. -->
+      <div id="bottomCarousel" class="p-md-3 m-0 container-fluid">
+        <div class="text-center">
+          <div style="width: fit-content" class="mx-auto">
+            <h1 class="title my-4">Feature Products</h1>
+          </div>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <!-- Slide 1 -->
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-4 col-lg-3 col-sm-6 col-12">
+                    <!-- Bootstrap columns for responsive layout -->
+                    <div class="card cardItem mx-auto" style="max-width: 400px">
+                      <!-- Card with cardItem class -->
+                      <img
+                        src="../Images/Carousal/suheyl-burak-p7I07kuPSyU-unsplash.webp"
+                        class="card-img-top"
+                        alt="Red Dress"
+                      />
+                      <!-- Image for the card -->
+                      <div class="card-body overlapBody">
+                        <!-- Card body with overlapBody class -->
+                        <h5 class="card-title itemName">Red Dress</h5>
+                        <!-- Title for the card item -->
+                        <p class="itemPrice">$15</p>
+                        <!-- Price for the item -->
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit.
+                        </p>
+                        <!-- Description for the item -->
+                        <button class="addCart">
+                          <i class="fa fa-cart-plus mx-2"></i>Add to Cart
+                        </button>
+                        <!-- Add to cart button for the item -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3 col-sm-6 d-none d-sm-block">
+                    <!-- Bootstrap columns for responsive layout -->
+                    <div class="card cardItem mx-auto" style="max-width: 400px">
+                      <!-- Card with cardItem class -->
+                      <img
+                        src="../Images/Carousal/mikail-mcverry-N-nHV0ksVfc-unsplash.webp"
+                        class="card-img-top"
+                        alt="Jeans"
+                      />
+                      <!-- Image for the card -->
+                      <div class="card-body overlapBody">
+                        <!-- Card body with overlapBody class -->
+                        <h5 class="card-title itemName">Jeans</h5>
+                        <!-- Title for the card item -->
+                        <p class="itemPrice">$15</p>
+                        <!-- Price for the item -->
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit.
+                        </p>
+                        <!-- Description for the item -->
+                        <button class="addCart">
+                          <i class="fa fa-cart-plus mx-2"></i>Add to Cart
+                        </button>
+                        <!-- Add to cart button for the item -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3 d-none d-md-block">
+                    <!-- Bootstrap columns for responsive layout -->
+                    <div class="card cardItem mx-auto" style="max-width: 400px">
+                      <!-- Card with cardItem class -->
+                      <img
+                        src="../Images/Carousal/nimble-made-N0ke5zChVBU-unsplash.webp"
+                        class="card-img-top"
+                        alt="Purple Shirt"
+                      />
+                      <!-- Image for the card -->
+                      <div class="card-body overlapBody">
+                        <!-- Card body with overlapBody class -->
+                        <h5 class="card-title itemName">Navy Blue Shirt</h5>
+                        <!-- Title for the card item -->
+                        <p class="itemPrice">$15</p>
+                        <!-- Price for the item -->
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit.
+                        </p>
+                        <!-- Description for the item -->
+                        <button class="addCart">
+                          <i class="fa fa-cart-plus mx-2"></i>Add to Cart
+                        </button>
+                        <!-- Add to cart button for the item -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3 d-none d-lg-block">
+                    <!-- This is a column of width 4 for medium-sized screens and width 3 for large screens. It is hidden on screens smaller than large. -->
+                    <div class="card cardItem mx-auto" style="max-width: 400px">
+                      <!-- This is a card element for displaying a product. It has a custom class called "cardItem". -->
+                      <img
+                        src="../Images/Carousal/andres-jasso-PqbL_mxmaUE-unsplash.webp"
+                        class="card-img-top"
+                        alt="Black Shoes"
+                      />
+                      <!-- This is an image element for displaying the product's image. It has a custom class called "card-img-top". The "alt" attribute provides alternative text for the image. -->
+                      <div class="card-body overlapBody">
+                        <!-- This is the body of the card element. It has a custom class called "overlapBody". -->
+                        <h5 class="card-title itemName">Black Shoes</h5>
+                        <!-- This is the product's name, displayed as the card title. It has a custom class called "itemName". -->
+                        <p class="itemPrice">$15</p>
+                        <!-- This is the product's price, displayed below the title. It has a custom class called "itemPrice". -->
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit.
+                        </p>
+                        <!-- This is the product's description, displayed below the price. -->
+                        <button class="addCart">
+                          <i class="fa fa-cart-plus mx-2"></i>
+                          Add to Cart
+                        </button>
+                        <!-- This is a button element for adding the product to the cart. It has a custom class called "addCart". It contains a font-awesome icon and the text "Add to Cart". -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4 col-lg-3 col-sm-6 col-12">
+                    <!-- Bootstrap columns for responsive layout -->
+
+                    <div class="card cardItem mx-auto" style="max-width: 400px">
+                      <!-- Card with cardItem class -->
+                      <img
+                        src="../Images/Carousal/nimble-made-N0ke5zChVBU-unsplash.webp"
+                        class="card-img-top"
+                        alt="Navy Blue Shirt"
+                      />
+                      <!-- Image for the card -->
+                      <div class="card-body overlapBody">
+                        <!-- Card body with overlapBody class -->
+                        <h5 class="card-title itemName">Navy Blue Shirt</h5>
+                        <!-- Title for the card item -->
+                        <p class="itemPrice">$15</p>
+                        <!-- Price for the item -->
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit.
+                        </p>
+                        <!-- Description for the item -->
+                        <button class="addCart">
+                          <i class="fa fa-cart-plus mx-2"></i>Add to Cart
+                        </button>
+                        <!-- Add to cart button for the item -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3 col-sm-6 d-none d-sm-block">
+                    <!-- Bootstrap columns for responsive layout -->
+                    <div class="card cardItem mx-auto" style="max-width: 400px">
+                      <!-- Card with cardItem class -->
+                      <img
+                        src="../Images/Carousal/nathan-dumlao-qxcQG21m_qE-unsplash.webp"
+                        class="card-img-top"
+                        alt="Leather Boots"
+                      />
+                      <!-- Image for the card -->
+                      <div class="card-body overlapBody">
+                        <!-- Card body with overlapBody class -->
+                        <h5 class="card-title itemName">Leather Boots</h5>
+                        <!-- Title for the card item -->
+                        <p class="itemPrice">$15</p>
+                        <!-- Price for the item -->
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit.
+                        </p>
+                        <!-- Description for the item -->
+                        <button class="addCart">
+                          <i class="fa fa-cart-plus mx-2"></i>Add to Cart
+                        </button>
+                        <!-- Add to cart button for the item -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3 d-none d-md-block">
+                    <!-- Bootstrap columns for responsive layout -->
+                    <div class="card cardItem mx-auto" style="max-width: 400px">
+                      <!-- Card with cardItem class -->
+                      <img
+                        src="../Images/Carousal/nimble-made-m2z2wJ1XX6Q-unsplash.webp"
+                        class="card-img-top"
+                        alt=" Shirts"
+                      />
+                      <!-- Image for the card -->
+                      <div class="card-body overlapBody">
+                        <!-- Card body with overlapBody class -->
+                        <h5 class="card-title itemName">Shirts</h5>
+                        <!-- Title for the card item -->
+                        <p class="itemPrice">$15</p>
+                        <!-- Price for the item -->
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit.
+                        </p>
+                        <!-- Description for the item -->
+                        <button class="addCart">
+                          <i class="fa fa-cart-plus mx-2"></i>Add to Cart
+                        </button>
+                        <!-- Add to cart button for the item -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3 d-none d-lg-block">
+                    <!-- This is a column of width 4 for medium-sized screens and width 3 for large screens. It is hidden on screens smaller than large. -->
+                    <div class="card cardItem mx-auto" style="max-width: 400px">
+                      <!-- This is a card element for displaying a product. It has a custom class called "cardItem". -->
+                      <img
+                        src="../Images/Carousal/mikail-mcverry-N-nHV0ksVfc-unsplash.webp"
+                        class="card-img-top"
+                        alt="Jeans"
+                      />
+                      <!-- This is an image element for displaying the product's image. It has a custom class called "card-img-top". The "alt" attribute provides alternative text for the image. -->
+                      <div class="card-body overlapBody">
+                        <!-- This is the body of the card element. It has a custom class called "overlapBody". -->
+                        <h5 class="card-title itemName">Jeans</h5>
+                        <!-- This is the product's name, displayed as the card title. It has a custom class called "itemName". -->
+                        <p class="itemPrice">$15</p>
+                        <!-- This is the product's price, displayed below the title. It has a custom class called "itemPrice". -->
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit.
+                        </p>
+                        <!-- This is the product's description, displayed below the price. -->
+                        <button class="addCart">
+                          <i class="fa fa-cart-plus mx-2"></i>
+                          Add to Cart
+                        </button>
+                        <!-- This is a button element for adding the product to the cart. It has a custom class called "addCart". It contains a font-awesome icon and the text "Add to Cart". -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4 col-lg-3 col-sm-6 col-12">
+                    <!-- Bootstrap columns for responsive layout -->
+
+                    <div class="card cardItem mx-auto" style="max-width: 400px">
+                      <!-- Card with cardItem class -->
+                      <img
+                        src="../Images/Carousal/nimble-made-m2z2wJ1XX6Q-unsplash.webp"
+                        class="card-img-top"
+                        alt="White Shirts"
+                      />
+                      <!-- Image for the card -->
+                      <div class="card-body overlapBody">
+                        <!-- Card body with overlapBody class -->
+                        <h5 class="card-title itemName">White Shirts</h5>
+                        <!-- Title for the card item -->
+                        <p class="itemPrice">$15</p>
+                        <!-- Price for the item -->
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit.
+                        </p>
+                        <!-- Description for the item -->
+                        <button class="addCart">
+                          <i class="fa fa-cart-plus mx-2"></i>Add to Cart
+                        </button>
+                        <!-- Add to cart button for the item -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3 col-sm-6 d-none d-sm-block">
+                    <!-- Bootstrap columns for responsive layout -->
+                    <div class="card cardItem mx-auto" style="max-width: 400px">
+                      <!-- Card with cardItem class -->
+                      <img
+                        src="../Images/Carousal/paul-gaudriault-a-QH9MAAVNI-unsplash.webp"
+                        class="card-img-top"
+                        alt="Casual Shoes"
+                      />
+                      <!-- Image for the card -->
+                      <div class="card-body overlapBody">
+                        <!-- Card body with overlapBody class -->
+                        <h5 class="card-title itemName">Casual Shoes</h5>
+                        <!-- Title for the card item -->
+                        <p class="itemPrice">$15</p>
+                        <!-- Price for the item -->
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit.
+                        </p>
+                        <!-- Description for the item -->
+                        <button class="addCart">
+                          <i class="fa fa-cart-plus mx-2"></i>Add to Cart
+                        </button>
+                        <!-- Add to cart button for the item -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3 d-none d-md-block">
+                    <!-- Bootstrap columns for responsive layout -->
+                    <div class="card cardItem mx-auto" style="max-width: 400px">
+                      <!-- Card with cardItem class -->
+                      <img
+                        src="../Images/Carousal/nathan-dumlao-qxcQG21m_qE-unsplash.webp"
+                        class="card-img-top"
+                        alt="Leather Boots"
+                      />
+                      <!-- Image for the card -->
+                      <div class="card-body overlapBody">
+                        <!-- Card body with overlapBody class -->
+                        <h5 class="card-title itemName">Leather Boots</h5>
+                        <!-- Title for the card item -->
+                        <p class="itemPrice">$15</p>
+                        <!-- Price for the item -->
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit.
+                        </p>
+                        <!-- Description for the item -->
+                        <button class="addCart">
+                          <i class="fa fa-cart-plus mx-2"></i>Add to Cart
+                        </button>
+                        <!-- Add to cart button for the item -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-lg-3 d-none d-lg-block">
+                    <!-- This is a column of width 4 for medium-sized screens and width 3 for large screens. It is hidden on screens smaller than large. -->
+                    <div class="card cardItem mx-auto" style="max-width: 400px">
+                      <!-- This is a card element for displaying a product. It has a custom class called "cardItem". -->
+                      <img
+                        src="../Images/Carousal/andres-jasso-PqbL_mxmaUE-unsplash.webp"
+                        class="card-img-top"
+                        alt="Black Shoes"
+                      />
+                      <!-- This is an image element for displaying the product's image. It has a custom class called "card-img-top". The "alt" attribute provides alternative text for the image. -->
+                      <div class="card-body overlapBody">
+                        <!-- This is the body of the card element. It has a custom class called "overlapBody". -->
+                        <h5 class="card-title itemName">Black Shoes</h5>
+                        <!-- This is the product's name, displayed as the card title. It has a custom class called "itemName". -->
+                        <p class="itemPrice">$15</p>
+                        <!-- This is the product's price, displayed below the title. It has a custom class called "itemPrice". -->
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit.
+                        </p>
+                        <!-- This is the product's description, displayed below the price. -->
+                        <button class="addCart">
+                          <i class="fa fa-cart-plus mx-2"></i>
+                          Add to Cart
+                        </button>
+                        <!-- This is a button element for adding the product to the cart. It has a custom class called "addCart". It contains a font-awesome icon and the text "Add to Cart". -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- This is an anchor tag for the previous button of the carousel. -->
+            <a
+              class="carousel-control-prev carouselBtn"
+              href="#myCarousel"
+              role="button"
+              data-slide="prev"
+            >
+              <!-- This is a span tag that displays an icon for the previous button. -->
+              <i class="carousel-control-prev-icon" aria-hidden="true"></i>
+              <!-- This is a span tag that displays text for the previous button, but it is only visible to screen readers. -->
+              <span class="sr-only">Previous</span>
+            </a>
+            <!-- This is an anchor tag for the next button of the carousel. -->
+            <a
+              class="carousel-control-next carouselBtn"
+              href="#myCarousel"
+              role="button"
+              data-slide="next"
+            >
+              <!-- This is a span tag that displays an icon for the next button. -->
+              <i class="carousel-control-next-icon" aria-hidden="true"></i>
+              <!-- This is a span tag that displays text for the next button, but it is only visible to screen readers. -->
+              <span class="sr-only">Next</span>
+            </a>
+            <!-- Indicators -->
+            <ul class="carousel-indicators mb-0 position-relative">
+              <li
+                data-target="#myCarousel"
+                data-slide-to="0"
+                class="active bg-dark"
+              ></li>
+              <li
+                data-target="#myCarousel"
+                class="bg-dark"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#myCarousel"
+                class="bg-dark"
+                data-slide-to="2"
+              ></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+    <!-- Bootstrap JS -->
+    <script src="../Js/Connector.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Connector.js go here -->
+  </body>
+</html>
